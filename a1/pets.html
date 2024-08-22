@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Victoria - Available Pets</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="logo.jpeg" alt="Pets Victoria Logo" id="logo"></a>
+            <select onchange="navigate(this)">
+                <option>Select an Option...</option>
+                <option value="index.html">Home</option>
+                <option value="pets.html">Pets</option>
+                <option value="add.html">Add More</option>
+                <option value="gallery.html">Gallery</option>
+            </select>
+            <form action="#" method="get">
+                <input type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </nav>
+    </header>
+    <main>
+        <h1>Discover Pets Victoria</h1>
+        <table>
+            <tr>
+                <th>Pet</th>
+                <th>Type</th>
+                <th>Age</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Milo</td>
+                <td>Cat</td>
+                <td>3 months</td>
+                <td>Melbourne CBD</td>
+            </tr>
+            <tr>
+                <td>Baxter</td>
+                <td>Dog</td>
+                <td>5 months</td>
+                <td>Cape Woolamai</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All Rights Reserved | Designed for Pets Victoria</p>
+    </footer>
+</body>
+</html>
