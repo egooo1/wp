@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Victoria - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="logo.jpeg" alt="Pets Victoria Logo" id="logo"></a>
+            <select onchange="navigate(this)">
+                <option>Select an Option...</option>
+                <option value="index.html">Home</option>
+                <option value="pets.html">Pets</option>
+                <option value="add.html">Add More</option>
+                <option value="gallery.html">Gallery</option>
+            </select>
+            <form action="#" method="get">
+                <input type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </nav>
+    </header>
+    <main>
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <img src="pet1.jpg" alt="Pet 1">
+            <img src="pet2.jpg" alt="Pet 2">
+            <img src="pet3.jpg" alt="Pet 3">
+            <!-- Add more images as needed -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All Rights Reserved | Designed for Pets Victoria</p>
+    </footer>
+</body>
+</html>
