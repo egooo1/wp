@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: #fcf9ec;
+    color: #36454F;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #E57F3D;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+}
+
+select, input[type="search"] {
+    font-family: 'Ysabeau SC', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #36454F;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #E57F3D;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: 'Poetsen One', sans-serif;
+    color: #008080;
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+/* Main Section Styles */
+main {
+    background-color: #fcf9ec;
+    padding: 20px;
+}
+
+.welcome {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-image {
+    float: right;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+footer p {
+    color: #008080;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main-image {
+        float: none;
+        margin: 20px auto;
+        width: 200px;
+        height: 200px;
+    }
+}
