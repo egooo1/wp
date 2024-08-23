@@ -4,106 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Victoria - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ysabeau+SC&family=Poetsen+One&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-  
-    <style>
-    body {
-        margin: 0 auto;
-        max-width: 1200px;
-        font-family: 'Ysabeau SC', sans-serif;
-        background-color: #fcf9ec;
-        color: #36454F;
-        line-height: 1.6;
-    }
-    
-    header, footer {
-        background-color: #E57F3D;
-        padding: 10px 20px;
-        text-align: center;
-    }
-    
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #logo {
-        width: 50px;
-    }
-    
-    select, input[type="search"] {
-        font-family: 'Ysabeau SC', sans-serif;
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #36454F;
-    }
-    
-    h1 {
-        font-family: 'Permanent Marker', cursive;
-        color: #E57F3D;
-        font-size: 2.5em;
-    }
-    
-    h2 {
-        font-family: 'Poetsen One', sans-serif;
-        color: #008080;
-        font-size: 1.8em;
-        margin-top: 10px;
-    }
-    
-    /* Main Section Styles */
-    main {
-        background-color: #fcf9ec;
-        padding: 20px;
-    }
-    
-    .welcome {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    #main-image {
-        float: right;
-        border-radius: 50%;
-        width: 350px;
-        height: 350px;
-        object-fit: cover;
-        margin-left: 20px;
-    }
-    
-    /* Footer Styles */
-    footer p {
-        color: #008080;
-        font-size: 0.9em;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .welcome {
-            flex-direction: column;
-            text-align: center;
-        }
-    
-        #main-image {
-            float: none;
-            margin: 20px auto;
-            width: 200px;
-            height: 200px;
-        }
-    }
-    
-        </style>
+    <script src="js/main.js" defer></script>
+
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="logo.jpeg" alt="Pets Victoria Logo" id="logo"></a>
+            <a href="index.html"><img src="images/logo.png" alt="Pets Victoria Logo" id="logo"></a>
             <select onchange="navigate(this)">
                 <option>Select an Option...</option>
                 <option value="index.html">Home</option>
@@ -120,7 +29,7 @@
         <section class="welcome">
             <h1>Pets Victoria</h1>
             <h2>Welcome to Pet Adoption</h2>
-            <img src="main.jpg" alt="Dog and Cat" id="main-image">
+            <img src="images/main.jpg" alt="Dog and Cat" id="main-image">
         </section>
     </main>
     <footer>

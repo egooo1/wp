@@ -3,59 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets Victoria - Add a Pet</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Add a Pet - Pets Victoria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ysabeau+SC&family=Poetsen+One&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="logo.jpeg" alt="Pets Victoria Logo" id="logo"></a>
+            <a href="index.html">
+                <img src="images/logo.png" id="logo" alt="Pets Victoria Logo">
+            </a>
             <select onchange="navigate(this)">
-                <option>Select an Option...</option>
                 <option value="index.html">Home</option>
                 <option value="pets.html">Pets</option>
-                <option value="add.html">Add More</option>
+                <option value="add.html" selected>Add More</option>
                 <option value="gallery.html">Gallery</option>
             </select>
             <form action="#" method="get">
-                <input type="search" placeholder="Search" aria-label="Search">
+                <input type="search" placeholder="Search...">
             </form>
         </nav>
     </header>
+
     <main>
         <h1>Add a Pet</h1>
-        <form action="submit_pet.php" method="post" enctype="multipart/form-data">
+        <form action="#" method="post" enctype="multipart/form-data">
             <label for="pet-name">Pet Name:</label>
             <input type="text" id="pet-name" name="pet-name" required>
 
-            <label for="type">Type:</label>
-            <select id="type" name="type" required>
-                <option value="cat">Cat</option>
-                <option value="dog">Dog</option>
+            <label for="pet-type">Type:</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Other">Other</option>
             </select>
 
             <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
+            <textarea id="description" name="description" rows="4" required></textarea>
 
             <label for="image">Select an Image:</label>
             <input type="file" id="image" name="image" accept="image/*" required>
 
-            <label for="caption">Image Caption:</label>
-            <input type="text" id="caption" name="caption" required>
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" name="image-caption" required>
 
-            <label for="age">Age (Months):</label>
-            <input type="number" id="age" name="age" required>
+            <label for="age">Age (months):</label>
+            <input type="number" id="age" name="age" min="0" required>
 
             <label for="location">Location:</label>
             <input type="text" id="location" name="location" required>
 
             <button type="submit">Submit</button>
-            <button type="reset">Clear</button>
         </form>
     </main>
+
     <footer>
-        <p>&copy; 2024 [Your Name]. All Rights Reserved | Designed for Pets Victoria</p>
+        <p>&copy; 2024 YiZhao Zheng. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
