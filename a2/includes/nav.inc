@@ -1,7 +1,7 @@
 <nav>
-    <a href=index.php>Home</a>
-    <a href=new_book.php>New Book</a>
-    <a href=books.php>Books</a>
-    <a href=authors.php>Author</a>
-    <a href=geners.php>Geners</a>
+    <a href="home.php">Home</a>
+    <a href="index.php">index</a>
+    <a href="pets.php">Pets</a>
+    <a href="gallery.php">Gallery</a>
+    <a href="add.php">Add Pet</a>
 </nav>
