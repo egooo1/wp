@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: #fcf9ec;
+    color: #36454F;
+    line-height: 1.6;
+    height: 100%;
+}
+
+header, footer {
+    background-color: #E57F3D;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+}
+
+select, input[type="search"] {
+    font-family: 'Ysabeau SC', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #36454F;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #E57F3D;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: 'Poetsen One', sans-serif;
+    color: #008080;
+    font-size: 2.5em;
+    margin-top: 200px;
+}
+
+/* Main Section Styles */
+main {
+    background-color: #fcf9ec;
+    padding: 20px;
+}
+
+.welcome {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-image {
+    float: right;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+/* Form Styles */
+.pet-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pet-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pet-form input[type="text"],
+.pet-form input[type="number"],
+.pet-form textarea,
+.pet-form select,
+.pet-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #36454F;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.pet-form textarea {
+    resize: vertical;
+}
+
+.pet-form .image-size-note {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+#submit-button {
+    background-color: #008080;
+    color: #fff;
+}
+
+#clear-button {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer p {
+    color: #008080;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main-image {
+        float: none;
+        margin: 20px auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .pet-form {
+        width: 100%;
+    }
+}
