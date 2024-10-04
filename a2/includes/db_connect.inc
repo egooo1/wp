@@ -1,20 +1,19 @@
 <?php
-//Check what server you are accessing
-if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "library";
-} else {
-    $servername = "talsprddb02.int.its.rmit.edu.au";
-    $username = "s123456";
-    $password = "your password";
-    $dbname = "s123456";
-}
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$host = 'localhost';  // Change as necessary
+$db   = 'petsvictoria';
+$user = 'root';       // Change as necessary
+$pass = '';           // Change as necessary
+$charset = 'utf8mb4';
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+try {
+    $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
+?>
